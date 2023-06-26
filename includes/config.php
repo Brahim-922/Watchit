@@ -4,6 +4,9 @@ session_start();
 
 date_default_timezone_set("Europe/Paris");
 
+
+
+
 try{
     $con = new PDO("mysql:dbname=watchit;host=localhost", "root", "");
     $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);

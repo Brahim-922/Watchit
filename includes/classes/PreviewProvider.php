@@ -11,6 +11,30 @@ class PreviewProvider{
         $this->username = $username;
         
     }
+    public function createTvShowPreviewVideo(){
+        $entitiesArray = EntityProvider::getTVShowEntities($this->con, null, 1);
+
+        if(sizeof($entitiesArray)== 0){
+            ErrorMessage::show("Pas d'émissions télévisées à afficher");
+        }
+        return $this->createPreviewVideo($entitiesArray[0]); 
+    }
+    public function createCategoriesPreviewVideo($categoryId){
+        $entitiesArray = EntityProvider::getEntities($this->con, $categoryId, 1);
+
+        if(sizeof($entitiesArray)== 0){
+            ErrorMessage::show("Pas de films à afficher");
+        }
+        return $this->createPreviewVideo($entitiesArray[0]); 
+    }
+    public function createMoviesPreviewVideo(){
+        $entitiesArray = EntityProvider::getMoviesEntities($this->con, null, 1);
+
+        if(sizeof($entitiesArray)== 0){
+            ErrorMessage::show("Pas de films à afficher");
+        }
+        return $this->createPreviewVideo($entitiesArray[0]); 
+    }
 
     public function createPreviewVideo($entity){
         if($entity  == null){

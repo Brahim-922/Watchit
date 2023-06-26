@@ -8,7 +8,9 @@
             
         </a>
     </div>
-    <div class="smallLogo"><img src="assets/images/scrollLogo.png" alt="smalllogo"></div>
+    <div class="smallLogo">
+        <img src="assets/images/scrollLogo.png" alt="smalllogo">
+    </div>
     <ul class="navLinks">
         <li><a href="index.php">Home</a></li>
         <li><a href="shows.php">TV Shows</a></li>
@@ -23,6 +25,12 @@
         <a href="profile.php">
 
         <i class="fa-solid fa-user"></i>
+
+        </a>
+
+        <a href="logout.php">
+
+        <i class="fa-solid fa-right-from-bracket"></i>
 
         </a>
         </div>

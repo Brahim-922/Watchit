@@ -10,7 +10,9 @@ class Constants{
     public static $emailTaken = "L'email existe déjà";
     public static $passwordsDontMatch = "Les mots de passe ne sont pas identiques";
     public static $passwordLength = "Le mot de passe doit contenir entre 6 et 25 caractères";
-    public static $loginFailed = "Votre pseudo ou votre mot passe est incorrect";
+    public static $loginFailed = "Votre pseudo ou votre mot de passe est incorrect";
+    public static $passwordIncorrect = "Votre ancien mot de passe est incorrect";
+
 }
 
 

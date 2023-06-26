@@ -9,6 +9,8 @@ require_once("includes/classes/SeasonProvider.php");
 require_once("includes/classes/Season.php");
 require_once("includes/classes/Video.php");
 require_once("includes/classes/videoProvider.php");
+require_once("includes/classes/User.php");
+
 
 
 
@@ -27,6 +29,7 @@ $userLoggedIn  = $_SESSION["userLoggedIn"];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WatchIt</title>
+    <link rel="icon" type="image/png" href="assets/images/scrollLogo.png" />
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/db51009301.js" crossorigin="anonymous"></script>
